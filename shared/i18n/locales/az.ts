@@ -26,7 +26,7 @@ export const messages: Messages = {
     ogImageAlt: "Transfer zamanı telefon başqa ekrandan animasiyalı QR kod axınını oxuyur.",
     heroTitleHtml: "Faylları<br />işıqla ötür.",
     heroCopy:
-      "Bir ekrandan digər cihazın kamerasına fayl və ya mətn göndərin. Hesab yaratmağa, cütləşdirməyə, bulud yaddaşına və ya cihazlar arasında şəbəkəyə ehtiyac yoxdur.",
+      "Məlumat və faylları birbaşa ekrandan kamerayla ötürmə imkanı. Hesab yaratmağa, cihazların sinxronizasiyasına, bulud saxlancına və ya şəbəkə bağlantısına ehtiyac yoxdur.",
     chooseSideAriaLabel: "Tərəf seçin",
     cardSendKicker: "Bu ekran ötürür",
     cardSendTitle: "Fayl və ya mətn göndər",
