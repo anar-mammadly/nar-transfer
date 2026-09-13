@@ -26,8 +26,8 @@ const publicDir = fileURLToPath(new URL("../public", import.meta.url));
 const logo = readFileSync(join(publicDir, "decimen_logo.svg"), "utf8");
 const cleaned = logo.replace(/<!--[\s\S]*?-->/g, "");
 
-const ROUNDED_RECT = '<rect width="640" height="640" rx="112" fill="#070a11"/>';
-const MARK_OPEN = '<g fill="#58c8ff" transform="translate(48.5,43)">';
+const ROUNDED_RECT = '<rect width="640" height="640" rx="112" fill="#7a1730"/>';
+const MARK_OPEN = '<g fill="#f0b23e" transform="translate(74,44) scale(2.46)">';
 
 function squareVariant(markScale: number): string {
   for (const needle of [ROUNDED_RECT, MARK_OPEN]) {
@@ -36,7 +36,7 @@ function squareVariant(markScale: number): string {
     }
   }
   return cleaned
-    .replace(ROUNDED_RECT, '<rect width="640" height="640" fill="#070a11"/>')
+    .replace(ROUNDED_RECT, '<rect width="640" height="640" fill="#7a1730"/>')
     .replace(
       MARK_OPEN,
       `<g transform="translate(320,320) scale(${markScale}) translate(-320,-320)">${MARK_OPEN}`,

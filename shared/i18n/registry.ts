@@ -27,9 +27,10 @@ export interface LocaleInfo {
   reviewed: boolean;
 }
 
-export const DEFAULT_LOCALE = "en";
+export const DEFAULT_LOCALE = "az";
 
 export const LOCALES: readonly LocaleInfo[] = [
+  { code: "az", lang: "az", nativeName: "Azərbaycanca", dir: "ltr", reviewed: false },
   { code: "en", lang: "en", nativeName: "English", dir: "ltr", reviewed: true },
   { code: "es", lang: "es", nativeName: "Español", dir: "ltr", reviewed: false },
   { code: "pt-br", lang: "pt-BR", nativeName: "Português (Brasil)", dir: "ltr", reviewed: false },

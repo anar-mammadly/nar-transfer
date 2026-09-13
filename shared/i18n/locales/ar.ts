@@ -20,7 +20,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — نقل الملفات بالضوء",
+    title: "Nar Transfer — نقل الملفات بالضوء",
     metaDescription:
       "أرسل ملفًا أو نصًا بين جهازين دون أي شيء سوى شاشة وكاميرا. رموز QR متحركة بترميز النافورة، من دون أي مسار شبكي بينهما.",
     ogDescription:
@@ -39,10 +39,10 @@ export const messages: Messages = {
     cardReceiveTitle: "وجِّه واستقبِل",
     cardReceiveBody: "وجِّه الكاميرا نحو شاشة المرسِل لاستقبال الملف.",
     cardReceiveAction: "استقبال",
-    shareSite: "مشاركة Decimen",
+    shareSite: "مشاركة Nar Transfer",
     supportTitle: "مجاني ومفتوح المصدر وبلا إعلانات",
     supportBodyHtml:
-      'إذا جعل Decimen يومك أسهل، يمكنك أن <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">تشتري لي فنجان قهوة</a>.',
+      'إذا جعل Nar Transfer يومك أسهل، يمكنك أن <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">تشتري لي فنجان قهوة</a>.',
     shareDialogTitle: "مشاركة هذا التطبيق",
     shareDialogHint: "امسح هذا الرمز بكاميرا جهاز آخر، أو أرسل إليه الرابط.",
     siteLinkAriaLabel: "رابط الموقع",
@@ -51,7 +51,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — الإرسال",
+    docTitle: "Nar Transfer — الإرسال",
     eyebrow: "الشاشة ← الكاميرا",
     introCopy: "لا يغادر جهازَك أي شيء حتى تمسح الرمز بجهاز مستقبِل.",
     modeAriaLabel: "ما الذي تريد إرساله",
@@ -99,7 +99,7 @@ export const messages: Messages = {
     shareDialogTitle: "مشاركة المستقبِل",
     shareDialogHint: "امسح هذا الرمز بكاميرا الجهاز الآخر، أو أرسل إليه الرابط.",
     receiverLinkAriaLabel: "رابط المستقبِل",
-    shareTitleData: "Decimen Optical Transfer — المستقبِل",
+    shareTitleData: "Nar Transfer — المستقبِل",
     loadingDemo: (name) => `جارٍ تحميل ${name}…`,
     demoLoadFailed: (name, status) => `تعذّر تحميل ${name} (${status})`,
     preparingFile: (name) => `جارٍ تحضير ${name}…`,
@@ -140,7 +140,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — الاستقبال",
+    docTitle: "Nar Transfer — الاستقبال",
     eyebrow: "الكاميرا ← جهازك",
     title: "استقبال",
     statusReady: "جاهز لمسح بث ملف أو نص",
@@ -215,7 +215,7 @@ export const messages: Messages = {
     mediaVideo: "الفيديو",
     mediaAudio: "المقطع الصوتي",
     showMedia: (noun) => `عرض ${noun}`,
-    clearCache: "مسح ذاكرة Decimen المؤقتة",
+    clearCache: "مسح ذاكرة Nar Transfer المؤقتة",
     cacheCleared: "تم مسح الذاكرة المؤقتة",
     clearCacheFailed: "فشل المسح — حاول مرة أخرى",
     receivedPreviewAlt: (name) => `معاينة الملف المستلَم: ${name}`,
@@ -256,11 +256,11 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `تلك الشاشة ترسل بتنسيق Decimen أقدم (v${version}). حدِّث الجهاز المرسِل.`,
+      `تلك الشاشة ترسل بتنسيق Nar Transfer أقدم (v${version}). حدِّث الجهاز المرسِل.`,
     newerSender: (version) =>
-      `تلك الشاشة ترسل بتنسيق Decimen أحدث (v${version}). حدِّث هذا التطبيق لاستقباله.`,
+      `تلك الشاشة ترسل بتنسيق Nar Transfer أحدث (v${version}). حدِّث هذا التطبيق لاستقباله.`,
     unsupportedFlags:
-      "يستخدم هذا البث ميزة من Decimen لا يستطيع هذا الإصدار قراءتها. حدِّث هذا التطبيق لاستقباله.",
+      "يستخدم هذا البث ميزة من Nar Transfer لا يستطيع هذا الإصدار قراءتها. حدِّث هذا التطبيق لاستقباله.",
   },
 
   units: {
@@ -278,7 +278,7 @@ export const messages: Messages = {
     languageSelectLabel: "اللغة",
     unreviewedNote: "هذه الترجمة مُعدَّة آليًا ولم يراجعها متحدث أصلي بالعربية بعد.",
     unreviewedLinkText: "الإبلاغ عن مشكلة في الترجمة",
-    switchOffer: "يتوفر Decimen باللغة العربية.",
+    switchOffer: "يتوفر Nar Transfer باللغة العربية.",
     switchAction: "العرض بالعربية",
   },
 };

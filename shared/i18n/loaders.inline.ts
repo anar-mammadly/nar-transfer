@@ -5,6 +5,7 @@
 // by build/use-inline-variants.ts; the hosted build never parses this file.
 
 import type { Messages } from "./messages";
+import * as az from "./locales/az";
 import * as en from "./locales/en";
 import * as es from "./locales/es";
 import * as ptBr from "./locales/pt-br";
@@ -19,6 +20,7 @@ import * as ko from "./locales/ko";
 import * as ar from "./locales/ar";
 
 export const loaders: Record<string, () => Promise<{ messages: Messages }>> = {
+  az: () => Promise.resolve(az),
   en: () => Promise.resolve(en),
   es: () => Promise.resolve(es),
   "pt-br": () => Promise.resolve(ptBr),

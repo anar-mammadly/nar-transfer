@@ -1,4 +1,4 @@
-# Decimen Optical Transfer: fountain-coded QR file transfer
+# Nar Transfer: fountain-coded QR file transfer
 
 Send a file between two devices using nothing but a **screen and a camera**.
 One page displays the file as an endless stream of animated QR codes; another
@@ -6,9 +6,12 @@ device points its camera at it and reconstructs the file. **No network path
 between the devices, no app, no pairing, no permissions beyond the camera.**
 The payload travels as light.
 
+Developed by [NARIX](https://narix.az). Licensed AGPL-3.0-or-later — see
+[NOTICE](NOTICE) and [LICENSE](LICENSE).
+
 ## Try it
 
-### **→ [decimen.app](https://decimen.app/)**
+### **→ [transfer.narix.az](https://transfer.narix.az/)**
 
 Open it on both devices and go — nothing to install. Works offline after the
 first visit, and installs as an app on both iOS and Android if you want it on
@@ -41,7 +44,7 @@ confidentiality — see [privacy](docs/user/privacy.md).
 ## Measured speed
 
 <!-- benchmarks:begin -->
-![sustained record](https://img.shields.io/badge/dynamic/json?label=sustained&color=blue&query=%24.sustained.badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fbashalarmistalt%2Fdecimen-optical-transfer%2Fmain%2Fbenchmarks%2Frecords.json)
+![sustained record](https://img.shields.io/badge/dynamic/json?label=sustained&color=blue&query=%24.sustained.badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fanar-mammadly%2Fnar-transfer%2Fmain%2Fbenchmarks%2Frecords.json)
 
 One record run per device pair. Sustained is whole-transfer goodput;
 peak is the best ≥1 s window inside that same run. Every row links to
@@ -109,9 +112,9 @@ have had similar ideas, and their takes are all worth a look:
 - [sz3/libcimbar](https://github.com/sz3/libcimbar): goes past QR entirely
   with a custom high-density color code purpose-built for this channel.
 
-## Project Creator/Maintainer
+## Developed by
 
-Built by [Evan Crawley (Bash Alarmist)](https://www.linkedin.com/in/evan-crawley), with
+[NARIX](https://narix.az), built on
 [node-qrcode](https://github.com/soldair/node-qrcode) and
 [decimen-codec](https://github.com/bashalarmistalt/decimen-codec), a custom
 [zxing-cpp](https://github.com/zxing-cpp/zxing-cpp) build.

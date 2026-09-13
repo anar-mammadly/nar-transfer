@@ -15,7 +15,7 @@ import type { Plugin } from "vite";
  */
 export function licenseBanner(version: string): Plugin {
   const text =
-    `Decimen Optical Transfer v${version} — https://decimen.app — ` +
+    `Nar Transfer v${version} (based on Decimen Optical Transfer) — https://transfer.narix.az — ` +
     `(c) 2026 Evan Crawley (Bash Alarmist) — SPDX-License-Identifier: AGPL-3.0-or-later — ` +
     `portions MIT: (c) 2026 Steve Dakh; Emscripten (see NOTICE) — ` +
     `Source: https://github.com/bashalarmistalt/decimen-optical-transfer`;

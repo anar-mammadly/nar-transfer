@@ -17,6 +17,7 @@ import { fillTokens, loaders } from "../shared/i18n/index.ts";
 import { ENGLISH_ERRORS, OpticalError, errorText } from "../shared/optical-error.ts";
 import { frameVerdictMessage } from "../shared/protocol.ts";
 
+import { messages as az } from "../shared/i18n/locales/az.ts";
 import { messages as en } from "../shared/i18n/locales/en.ts";
 import { messages as es } from "../shared/i18n/locales/es.ts";
 import { messages as ptBr } from "../shared/i18n/locales/pt-br.ts";
@@ -31,7 +32,7 @@ import { messages as ko } from "../shared/i18n/locales/ko.ts";
 import { messages as ar } from "../shared/i18n/locales/ar.ts";
 
 const CATALOGS: Record<string, Messages> = {
-  en, es, "pt-br": ptBr, fr, de, it, ru, hi, "zh-hans": zhHans, ja, ko, ar,
+  az, en, es, "pt-br": ptBr, fr, de, it, ru, hi, "zh-hans": zhHans, ja, ko, ar,
 };
 
 /** Every string leaf of a catalog, as [dot.path, value]. */
@@ -89,7 +90,7 @@ test("every catalog has exactly the English key structure", () => {
 
 test("no catalog is an untranslated stub of the English source", () => {
   for (const [code, catalog] of Object.entries(CATALOGS)) {
-    if (code === DEFAULT_LOCALE) continue;
+    if (code === "en") continue;
     assert.notEqual(catalog.home.heroCopy, en.home.heroCopy, `${code}: heroCopy untranslated`);
     assert.notEqual(
       catalog.errors.fileEmpty,

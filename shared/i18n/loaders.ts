@@ -14,6 +14,7 @@
 import type { Messages } from "./messages";
 
 export const loaders: Record<string, () => Promise<{ messages: Messages }>> = {
+  az: () => import("./locales/az"),
   en: () => import("./locales/en"),
   es: () => import("./locales/es"),
   "pt-br": () => import("./locales/pt-br"),

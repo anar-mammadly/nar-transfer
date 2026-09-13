@@ -11,7 +11,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 15px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,7 +122,7 @@ button:focus-visible {
 
 .file-picker.has-file:hover .file-picker-button {
   /* --red at ~12% for the fill; keep in step if the token changes. */
-  background: rgba(255, 123, 114, 0.12);
+  background: rgba(194, 59, 44, 0.12);
 }
 
 .file-picker-text {
@@ -466,33 +466,41 @@ details.settings details.subsection .hint {
 }
 
 /* Product shell ------------------------------------------------------------
-   "Aperture": cool blue-black with a scanner cyan. Reads as measurement
-   equipment rather than a terminal, and — unlike a green accent — leaves green
-   free to mean *verified* and red free to mean *failed*, which this UI needs.
-   Every colour below is a token; the only literal colours left in this file are
-   functional (the QR quiet zone, the letterbox behind the camera). */
+   "Nar" (pomegranate): warm cream paper with a deep pomegranate-red panel
+   accent and a gold action colour — the crown and the arils, not another
+   blue-on-black "AI product" gradient. Gold is budgeted for actions (see the
+   control-hierarchy note above); green stays reserved for *verified* and red
+   for *failed*, so the deep red used for brand chrome never collides with the
+   error colour. Every colour below is a token; the only literal colours left
+   in this file are functional (the QR quiet zone, the letterbox behind the
+   camera, which stays near-black in any theme so the camera image reads). */
 :root {
-  color-scheme: dark;
-  --bg: #070a11;
-  --panel: #0e1420;
-  --panel-strong: #121a29;
-  --line: #1d2740;
-  --line-bright: #34466f;
-  --text: #dde6f5;
-  --text-dim: #b9c6dd;
-  --muted: #7c8aa8;
-  --muted-dim: #5c6883;
-  --accent: #58c8ff;
-  --accent-hi: #8adaff;
-  /* Ink for text sitting ON the accent. Separate token because a light theme
-     would need this to go the other way. */
-  --accent-ink: #04121c;
-  --green: #5fe0b0;
-  --red: #ff7b72;
+  color-scheme: light;
+  --bg: #fbf1e6;
+  --panel: #f7e6d2;
+  --panel-strong: #f0d7b9;
+  --line: #e6cca4;
+  --line-bright: #cf9f5f;
+  --text: #2c1710;
+  --text-dim: #4d2e1e;
+  --muted: #8a6650;
+  --muted-dim: #a8886e;
+  --accent: #a8721f;
+  --accent-hi: #c68a2c;
+  /* Ink for text sitting ON the accent — light, since the gold accent here is
+     dark enough to need it, unlike the cool-toned original this replaced. */
+  --accent-ink: #fbf1e6;
+  --green: #3f7d4a;
+  --red: #c23b2c;
   /* Behind the camera image: stays near-black in any theme. */
-  --viewport-bg: #04070d;
-  --accent-rgb: 88, 200, 255;
-  --bg-rgb: 7, 10, 17;
+  --viewport-bg: #120a06;
+  --accent-rgb: 168, 114, 31;
+  --bg-rgb: 251, 241, 230;
+  /* Brand-only tokens: the deep pomegranate red used for chrome surfaces that
+     want to read as "the app", not as an action — the header/footer backdrop
+     tint and the QR stage's rest state never use these for text or controls. */
+  --brand-red: #7a1730;
+  --brand-red-rgb: 122, 23, 48;
 }
 
 /* Column flex (gap zeroed — the base body gap would pad between header, main
@@ -627,7 +635,7 @@ details.settings details.subsection .hint {
 .hero h1 {
   margin: 0;
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
   /* A headline, not a billboard — at 94px it was the loudest thing on a page
      whose real content is the two cards below it. */
   font-size: clamp(32px, 5vw, 56px);
@@ -844,6 +852,7 @@ details.settings details.subsection .hint {
 .receiver-heading h1 {
   margin: 0;
   color: var(--text);
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
   font-size: clamp(30px, 6vw, 48px);
   line-height: 1.05;
   letter-spacing: -0.05em;
@@ -870,7 +879,7 @@ details.settings details.subsection .hint {
 .status-line.error {
   padding: 10px 12px;
   color: var(--red);
-  background: rgba(255, 123, 114, 0.1);
+  background: rgba(194, 59, 44, 0.1);
   border-inline-start: 3px solid var(--red);
   border-start-start-radius: 0;
   border-end-start-radius: 0;

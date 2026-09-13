@@ -3,6 +3,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { LOCALES, DEFAULT_LOCALE, type LocaleInfo } from "../shared/i18n/registry";
 import type { Messages } from "../shared/i18n/messages";
+import { messages as az } from "../shared/i18n/locales/az";
 import { messages as en } from "../shared/i18n/locales/en";
 import { messages as es } from "../shared/i18n/locales/es";
 import { messages as ptBr } from "../shared/i18n/locales/pt-br";
@@ -53,7 +54,7 @@ import { messages as ar } from "../shared/i18n/locales/ar";
  */
 
 const CATALOGS: Record<string, Messages> = {
-  en, es, "pt-br": ptBr, fr, de, it, ru, hi, "zh-hans": zhHans, ja, ko, ar,
+  az, en, es, "pt-br": ptBr, fr, de, it, ru, hi, "zh-hans": zhHans, ja, ko, ar,
 };
 
 // Hosted page files, keyed by their path in the bundle.

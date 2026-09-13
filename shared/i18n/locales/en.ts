@@ -23,7 +23,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — transfer files with light",
+    title: "Nar Transfer — transfer files with light",
     metaDescription:
       "Send a file or text between two devices with nothing but a screen and a camera. Fountain-coded animated QR codes, no network path in between.",
     ogDescription:
@@ -42,10 +42,10 @@ export const messages: Messages = {
     cardReceiveTitle: "Point and receive",
     cardReceiveBody: "Point your camera at the sender's screen to receive the file.",
     cardReceiveAction: "Receive",
-    shareSite: "Share Decimen",
+    shareSite: "Share Nar Transfer",
     supportTitle: "Free, open source, no ads",
     supportBodyHtml:
-      'If Decimen made your day easier, you can <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">buy me a coffee</a>.',
+      'If Nar Transfer made your day easier, you can <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">buy me a coffee</a>.',
     shareDialogTitle: "Share this app",
     shareDialogHint: "Scan this with another device's camera, or send it the link.",
     siteLinkAriaLabel: "Site link",
@@ -54,7 +54,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — send",
+    docTitle: "Nar Transfer — send",
     eyebrow: "Screen → camera",
     introCopy: "Nothing leaves your device until you scan with a receiver.",
     modeAriaLabel: "What to send",
@@ -103,7 +103,7 @@ export const messages: Messages = {
     shareDialogTitle: "Share the receiver",
     shareDialogHint: "Scan this with the other device's camera, or send it the link.",
     receiverLinkAriaLabel: "Receiver link",
-    shareTitleData: "Decimen Optical Transfer — receiver",
+    shareTitleData: "Nar Transfer — receiver",
     loadingDemo: (name) => `loading ${name}…`,
     demoLoadFailed: (name, status) => `could not load ${name} (${status})`,
     preparingFile: (name) => `preparing ${name}…`,
@@ -142,7 +142,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — receive",
+    docTitle: "Nar Transfer — receive",
     eyebrow: "Camera → your device",
     title: "Receive",
     statusReady: "Ready to scan a file or text stream",
@@ -217,7 +217,7 @@ export const messages: Messages = {
     mediaVideo: "video",
     mediaAudio: "audio",
     showMedia: (noun) => `Show ${noun}`,
-    clearCache: "Clear Decimen cache",
+    clearCache: "Clear Nar Transfer cache",
     cacheCleared: "Cache cleared",
     clearCacheFailed: "Clear failed — try again",
     receivedPreviewAlt: (name) => `Received file preview: ${name}`,
@@ -242,11 +242,11 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `That screen is sending an older Decimen format (v${version}). Update the sending device.`,
+      `That screen is sending an older Nar Transfer format (v${version}). Update the sending device.`,
     newerSender: (version) =>
-      `That screen is sending a newer Decimen format (v${version}). Update this app to receive it.`,
+      `That screen is sending a newer Nar Transfer format (v${version}). Update this app to receive it.`,
     unsupportedFlags:
-      "That stream uses a Decimen feature this version cannot read. Update this app to receive it.",
+      "That stream uses a Nar Transfer feature this version cannot read. Update this app to receive it.",
   },
 
   units: {
@@ -265,7 +265,7 @@ export const messages: Messages = {
     unreviewedNote:
       "This translation is machine-drafted and has not yet been reviewed by a native speaker.",
     unreviewedLinkText: "Report a translation issue",
-    switchOffer: "Decimen is available in English.",
+    switchOffer: "Nar Transfer is available in English.",
     switchAction: "View in English",
   },
 };

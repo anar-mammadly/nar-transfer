@@ -19,7 +19,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — передача файлов светом",
+    title: "Nar Transfer — передача файлов светом",
     metaDescription:
       "Отправляйте файлы и текст между двумя устройствами, используя только экран и камеру. Анимированные QR-коды с фонтанным кодированием, без сетевого соединения между устройствами.",
     ogDescription:
@@ -39,10 +39,10 @@ export const messages: Messages = {
     cardReceiveTitle: "Наведите и получите",
     cardReceiveBody: "Наведите камеру на экран отправителя, чтобы получить файл.",
     cardReceiveAction: "Получить",
-    shareSite: "Поделиться Decimen",
+    shareSite: "Поделиться Nar Transfer",
     supportTitle: "Бесплатно, открытый код, без рекламы",
     supportBodyHtml:
-      'Если Decimen вам пригодился, можете <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">угостить меня кофе</a>.',
+      'Если Nar Transfer вам пригодился, можете <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">угостить меня кофе</a>.',
     shareDialogTitle: "Поделиться приложением",
     shareDialogHint:
       "Отсканируйте этот код камерой другого устройства или отправьте ему ссылку.",
@@ -52,7 +52,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — отправка",
+    docTitle: "Nar Transfer — отправка",
     eyebrow: "Экран → камера",
     introCopy: "Данные не покидают ваше устройство, пока вы не отсканируете их приёмником.",
     modeAriaLabel: "Что отправить",
@@ -103,7 +103,7 @@ export const messages: Messages = {
     shareDialogHint:
       "Отсканируйте этот код камерой второго устройства или отправьте ему ссылку.",
     receiverLinkAriaLabel: "Ссылка на приёмник",
-    shareTitleData: "Decimen Optical Transfer — приёмник",
+    shareTitleData: "Nar Transfer — приёмник",
     loadingDemo: (name) => `загрузка ${name}…`,
     demoLoadFailed: (name, status) => `не удалось загрузить ${name} (${status})`,
     preparingFile: (name) => `подготовка ${name}…`,
@@ -145,7 +145,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — приём",
+    docTitle: "Nar Transfer — приём",
     eyebrow: "Камера → ваше устройство",
     title: "Приём",
     statusReady: "Готово к сканированию файла или текстового потока",
@@ -223,7 +223,7 @@ export const messages: Messages = {
     mediaVideo: "видео",
     mediaAudio: "аудио",
     showMedia: (noun) => `Показать ${noun}`,
-    clearCache: "Очистить кэш Decimen",
+    clearCache: "Очистить кэш Nar Transfer",
     cacheCleared: "Кэш очищен",
     clearCacheFailed: "Не удалось очистить — попробуйте ещё раз",
     receivedPreviewAlt: (name) => `Предпросмотр полученного файла: ${name}`,
@@ -264,11 +264,11 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `Передающий экран использует более старый формат Decimen (v${version}). Обновите отправляющее устройство.`,
+      `Передающий экран использует более старый формат Nar Transfer (v${version}). Обновите отправляющее устройство.`,
     newerSender: (version) =>
-      `Передающий экран использует более новый формат Decimen (v${version}). Обновите это приложение, чтобы принять поток.`,
+      `Передающий экран использует более новый формат Nar Transfer (v${version}). Обновите это приложение, чтобы принять поток.`,
     unsupportedFlags:
-      "Этот поток использует возможность Decimen, которую эта версия не умеет читать. Обновите это приложение, чтобы принять поток.",
+      "Этот поток использует возможность Nar Transfer, которую эта версия не умеет читать. Обновите это приложение, чтобы принять поток.",
   },
 
   units: {
@@ -287,7 +287,7 @@ export const messages: Messages = {
     unreviewedNote:
       "Этот перевод сделан машиной и ещё не проверен носителем языка.",
     unreviewedLinkText: "Сообщить об ошибке перевода",
-    switchOffer: "Decimen доступен на русском.",
+    switchOffer: "Nar Transfer доступен на русском.",
     switchAction: "Открыть на русском",
   },
 };

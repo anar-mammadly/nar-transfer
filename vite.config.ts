@@ -28,7 +28,7 @@ import { i18nPages } from "./build/i18n-pages";
 // — scrapers are inconsistent about resolving relative ones. Override with
 // VITE_SITE_URL when deploying somewhere else; nothing else depends on it, and
 // the build still works under any subpath.
-const SITE_URL = process.env.VITE_SITE_URL ?? "https://decimen.app/";
+const SITE_URL = process.env.VITE_SITE_URL ?? "https://transfer.narix.az/";
 
 // HTTPS always: the receiver needs getUserMedia, and on insecure origins
 // that API does not exist at all — a phone reaching this server over the LAN
@@ -39,8 +39,8 @@ const SITE_URL = process.env.VITE_SITE_URL ?? "https://decimen.app/";
 // Modes:
 //   (default)           the site — three pages, PWA, offline after first visit
 //   demo                sender locked to the bundled payloads
-//   standalone-send     one self-contained decimen-sender.html
-//   standalone-receive  one self-contained decimen-receiver.html
+//   standalone-send     one self-contained nar-transfer-sender.html
+//   standalone-receive  one self-contained nar-transfer-receiver.html
 //
 // The plugins live in build/, one file each.
 
@@ -51,12 +51,12 @@ const pkg = JSON.parse(readFileSync(resolve(__dirname, "package.json"), "utf8"))
 // Shared between the root PWA manifest and the per-locale manifests emitted
 // by i18nPages() — one identity, translated descriptions.
 const MANIFEST_BASE = {
-  name: "Decimen Optical Transfer",
-  short_name: "Decimen",
+  name: "Nar Transfer",
+  short_name: "Nar Transfer",
   description:
     "Send a file or text between two devices with a screen and a camera. No network.",
-  theme_color: "#070a11",
-  background_color: "#070a11",
+  theme_color: "#7a1730",
+  background_color: "#fbf1e6",
   display: "standalone" as const,
   // Real icons, not the demo payload image this once pointed at. The
   // maskable variant keeps the mark inside the launcher's safe zone;
@@ -132,7 +132,7 @@ export default defineConfig(({ mode }) => {
         standaloneCsp(page),
         viteSingleFile(),
         licenseBanner(pkg.version),
-        emitAs(outDir, `${page}/index.html`, `decimen-${page === "send" ? "sender" : "receiver"}.html`),
+        emitAs(outDir, `${page}/index.html`, `nar-transfer-${page === "send" ? "sender" : "receiver"}.html`),
       ],
       // Workers are bundled in their own Rollup pass and do not inherit the
       // plugin list, so both plugins have to be registered again here.

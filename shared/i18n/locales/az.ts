@@ -1,0 +1,282 @@
+// Azerbaijani (Azərbaycanca). Machine-drafted (Claude), not yet reviewed by a
+// native speaker. Once a native review lands, flip `reviewed: true` for "az"
+// in shared/i18n/registry.ts — that removes the on-page unreviewed note.
+
+import type { Messages } from "../messages";
+import { localeByCode } from "../registry";
+
+export const messages: Messages = {
+  meta: localeByCode("az")!,
+
+  chrome: {
+    navAriaLabel: "Rejim",
+    navSend: "Göndər",
+    navReceive: "Qəbul et",
+    modeBadgeSend: "Göndər",
+    modeBadgeReceive: "Qəbul et",
+    footerLinksAriaLabel: "Layihə bağlantıları",
+    footerSupport: "♥ dəstək ol",
+  },
+
+  home: {
+    title: "Nar Transfer — faylları işıqla ötür",
+    metaDescription:
+      "İki cihaz arasında yalnız ekran və kamera ilə fayl və ya mətn göndərin. Fontan kodlaşdırılmış animasiyalı QR kodlar, aralarında şəbəkə yoxdur.",
+    ogDescription:
+      "Fontan kodlaşdırılmış animasiyalı QR kodlar, ekrandan kameraya. Hesab yoxdur, cütləşdirmə yoxdur, iki cihaz arasında şəbəkə yolu yoxdur. Sabit sürət %TOP_SPEED%, sübutlarla ölçülüb.",
+    ogImageAlt: "Transfer zamanı telefon başqa ekrandan animasiyalı QR kod axınını oxuyur.",
+    heroTitleHtml: "Faylları<br />işıqla ötür.",
+    heroCopy:
+      "Bir ekrandan başqa cihazın kamerasına fayl və ya mətn parçası göndərin. Hesab, cütləşdirmə, bulud yaddaşı və ya cihazlar arasında şəbəkə tələb olunmur.",
+    chooseSideAriaLabel: "Tərəf seçin",
+    cardSendKicker: "Bu ekran ötürür",
+    cardSendTitle: "Fayl və ya mətn göndər",
+    cardSendBody:
+      "%MAX_FILE_LABEL%-a qədər istənilən fayl, ya da %MAX_SNIPPET_LABEL%-a qədər yapışdırılmış mətn parçası. Faydalı olduqda sıxılır, orijinal adı ilə bərpa olunur.",
+    cardSendAction: "Göndər",
+    cardReceiveKicker: "Bu kamera qəbul edir",
+    cardReceiveTitle: "Yönəldin və qəbul edin",
+    cardReceiveBody: "Faylı almaq üçün kameranı göndərənin ekranına yönəldin.",
+    cardReceiveAction: "Qəbul et",
+    shareSite: "Nar Transfer-i paylaş",
+    supportTitle: "Pulsuz, açıq mənbə, reklamsız",
+    supportBodyHtml:
+      'Əgər Nar Transfer gününüzü asanlaşdırıbsa, mənə <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">bir fincan qəhvə</a> ala bilərsiniz.',
+    shareDialogTitle: "Bu tətbiqi paylaş",
+    shareDialogHint: "Bunu başqa cihazın kamerası ilə skan edin, ya da linki göndərin.",
+    siteLinkAriaLabel: "Sayt linki",
+    privacyNote:
+      "Cihazlar arasında şəbəkə yolu tələb olunmur. Baytlar işıqla ötürülür. Fayllar şifrələnmir, ona görə göndərən ekranda olan hər şey ona yönəlmiş istənilən kamera tərəfindən oxuna bilər.",
+  },
+
+  send: {
+    docTitle: "Nar Transfer — göndər",
+    eyebrow: "Ekran → kamera",
+    introCopy: "Qəbuledici ilə skan edilənə qədər heç nə cihazınızdan çıxmır.",
+    modeAriaLabel: "Nə göndərilsin",
+    modeFile: "Fayl",
+    modeSnippet: "Mətn parçası",
+    titleFile: "Fayl göndər",
+    titleSnippet: "Mətn göndər",
+    selectFile: "Fayl seç",
+    stopTransfer: "Ötürməni dayandır",
+    anyFileUpTo: "İstənilən fayl · %MAX_FILE_LABEL%-a qədər",
+    selectedFile: (name) => `Seçilmiş fayl: ${name}`,
+    demoPayload: "Demo yük",
+    benchmarkPayload: "Benchmark yükü",
+    demo512: "512 KB şəkil",
+    demo2mb: "2 MB şəkil",
+    demoBenchmark: "1 MB benchmark",
+    navDemo: "Demo",
+    navBenchmark: "Benchmark",
+    snippetLabel: "Göndəriləcək mətn",
+    snippetLabelWithMax: "Göndəriləcək mətn · %MAX_SNIPPET_LABEL%-a qədər",
+    snippetPlaceholder: "İstənilən şeyi yapışdırın və ya yazın — URL, konfiqurasiya, uzun mətn…",
+    startTextStream: "Mətn axınını başlat",
+    settingsSummary: "Ötürmə ayarları",
+    settingTxFps: "ötürmə fps",
+    settingBytesPerFrame: "bayt / kadr",
+    settingEcc: "xəta düzəlişi",
+    settingLayout: "düzülüş",
+    layout1: "1 kod",
+    layout2: "2 kod (1×2)",
+    layout4: "4 kod (2×2)",
+    layout6: "6 kod (2×3)",
+    settingDisplaySize: "ekran ölçüsü",
+    specTxRate: "ötürmə sürəti",
+    specFramePayload: "kadr yükü",
+    specQr: "qr",
+    specSending: "göndərilir",
+    specCompression: "sıxılma",
+    specFountainBlocks: "fontan blokları",
+    statusChooseFile: "Başlamaq üçün fayl seçin",
+    statusPasteText: "Başlamaq üçün mətn yapışdırın və ya yazın",
+    statusChooseDemo: "Başlamaq üçün demo yük seçin",
+    statusBenchmark: "Başlamaq üçün benchmark yükünü göndərin",
+    footerHint: "Digər cihazda Qəbul et bölməsini açın. Bu ekranın parlaqlığını artırın.",
+    footerHintStandalone:
+      "Digər cihazda avtonom qəbuledicini açın. Bu ekranın parlaqlığını artırın.",
+    shareDialogTitle: "Qəbuledicini paylaş",
+    shareDialogHint: "Bunu digər cihazın kamerası ilə skan edin, ya da linki göndərin.",
+    receiverLinkAriaLabel: "Qəbuledici linki",
+    shareTitleData: "Nar Transfer — qəbuledici",
+    loadingDemo: (name) => `yüklənir ${name}…`,
+    demoLoadFailed: (name, status) => `${name} yüklənə bilmədi (${status})`,
+    preparingFile: (name) => `hazırlanır ${name}…`,
+    preparingSnippet: "mətn parçası hazırlanır…",
+    fileEmpty: (name) => `${name} boşdur — göndəriləcək heç nə yoxdur.`,
+    fileOverLimit: (name, size, limit) => `${name} ${size} ölçüsündədir, ${limit} limitindən böyükdür.`,
+    capacityError: (size, blocks, frameBytes, maxBlocks, suggestion) =>
+      `${size} üçün kadr başına ${frameBytes} baytla ${blocks} blok lazımdır, kadr isə yalnız ` +
+      `${maxBlocks} bloku nömrələyə bilər. Bayt / kadr dəyərini ${suggestion} və ya daha çox edin.`,
+    streaming: (name) => `Ötürülür ${name} — `,
+    shareReceiverLink: "Qəbuledici linkini paylaş",
+    stallWarning: (seconds) =>
+      `Axın ${seconds} saniyə dondu — bu pəncərə gizli və ya arxa planda idi. ` +
+      `Onu görünən və fokuslu saxlayın; dayananda qəbuledici kilidi itirir.`,
+    fpsValue: (fps, codes) => (codes > 1 ? `${fps} fps × ${codes} kod` : `${fps} fps`),
+    frameBytesValue: (bytes, codes) => (codes > 1 ? `${bytes} bayt × ${codes}` : `${bytes} bayt`),
+    gzipTo: (size) => `gzip → ${size}`,
+    compressionNone: "yoxdur",
+    exportSummary: "Animasiyanı ixrac et",
+    exportIntro:
+      "Bu axını dövr edən animasiya faylı kimi saxlayın. Onu videoya və ya səhifəyə yerləşdirin — " +
+      "oynadılan dövrəyə yönəlmiş istənilən kamera faylı qəbul edə bilər.",
+    exportFormat: "format",
+    exportFormatZip: "PNG ardıcıllığı (ZIP)",
+    exportFps: "kadr sürəti",
+    exportScale: "modul miqyası",
+    exportCycles: "dövrlər",
+    exportStart: "İxrac et",
+    exportCancel: "Ləğv et",
+    exportEstimate: (frames, size, loop) => `${frames} kadr · ~${size} · ${loop} dövr`,
+    exportProgress: (percent) => `render olunur… ${percent}%`,
+    exportFailed: (message) => `ixrac uğursuz oldu: ${message}`,
+    exportZipLimit: (frames, max) =>
+      `${frames} kadr ${max} olan ZIP limitindən çoxdur. Dövrləri azaldın, düzülüşü genişləndirin, ya da bayt / kadr artırın.`,
+  },
+
+  receive: {
+    docTitle: "Nar Transfer — qəbul",
+    eyebrow: "Kamera → sizin cihaz",
+    title: "Qəbul",
+    statusReady: "Fayl və ya mətn axınını skan etməyə hazırdır",
+    startCamera: "Kameranı başlat",
+    starting: "Başladılır…",
+    noSignalQuestion: "Heç nə baş vermir?",
+    progressZero: "0% · 0 kadr",
+    estimatingTime: "Vaxt hesablanır…",
+    progressAriaLabel: "Ötürmənin bərpa gedişatı",
+    tipsTitle: "Problemin həlli məsləhətləri",
+    tipDropFrameBytes: (bytes) =>
+      `Göndərəndə Ötürmə ayarlarını açın və bayt / kadr dəyərini ${bytes}-a endirin.`,
+    tipDropTxFps: (fps) => `Yenə də heç nə yoxdur? Göndərənin ötürmə fps-ni də ${fps}-a endirin.`,
+    tipFillView:
+      "Kameranın görüntüsünü tamamilə kodla doldurun və telefonu sabit bir şeyə söykəyin — " +
+      "adətən əl titrəməsindən yaranan avtofokus axtarışı buna səbəb olur.",
+    tipBrightness: "Göndərən ekranın parlaqlığını sonuna qədər artırın.",
+    diagnosticsSummary: "Canlı diaqnostika",
+    metricCaptureFps: "çəkim fps",
+    metricDecodeFps: "deşifrə fps",
+    metricGoodput: "faydalı sürət",
+    metricElapsed: "keçən vaxt",
+    metricFrames: "kadr yeni/təkrar",
+    metricBlocks: "blok K",
+    metricBlockLen: "blok uzunluğu",
+    metricTransfer: "ötürmə",
+    settingsSummary: "Qəbul ayarları",
+    settingCamera: "kamera",
+    cameraAuto: "avto",
+    cameraN: (n) => `kamera ${n}`,
+    settingCaptureWidth: "çəkim eni",
+    settingCaptureFps: "çəkim fps",
+    settingDecodeWorkers: "deşifrə işçiləri",
+    autoShowLabel: "Qəbul edilən faylları avtomatik göstər",
+    settingsApplied: "Kamera başladıqda tətbiq olunur.",
+    errSecureContext:
+      "kamera üçün təhlükəsiz kontekst lazımdır — başqa cihazdan kameradan istifadə etmək üçün " +
+      "bu səhifə https üzərindən verilməlidir. `npm run dev` artıq bunu edir.",
+    errPermissionDenied: "kamera icazəsi rədd edildi — icazə verin, sonra yenidən Kameranı başlat düyməsinə basın.",
+    errCameraGone:
+      "həmin kamera artıq əlçatan deyil — kamera ayarını avto-ya qaytarın və Kameranı başlat düyməsinə basın.",
+    errCamera: (message) => `kamera: ${message}`,
+    errRestartFailed: "kamera: keçiddən sonra yenidən başlaya bilmədi — Kameranı başlat düyməsinə basın.",
+    errLiveChangeRefused: "bu kamera canlı dəyişikliyi rədd etdi — tətbiq etmək üçün yenidən başladın",
+    cameraRefusedKeptPrevious: "həmin kamera başlamadı — əvvəlki kamera saxlanıldı",
+    cameraSearching: (resolution) => `kamera ${resolution} — axın axtarılır…`,
+    cameraActual: (resolution, fps, askedFps, workers) =>
+      `kamera ${resolution} @ ${fps} fps${askedFps === null ? "" : ` (istənilən ${askedFps})`} · ` +
+      `${workers} deşifrə işçisi · dəyişikliklər canlı tətbiq olunur`,
+    progressBlocks: (percent, solved, k) => `${percent}% · ${solved}/${k} blok`,
+    framesDecoding: (frames) => `${frames} kadr · deşifrə olunur`,
+    aboutEta: (duration, frames) => `Təxminən ${duration} · ${frames} kadr`,
+    etaTotal: (duration) => `cəmi ${duration}`,
+    transferFailedShort: "Ötürmə uğursuz oldu",
+    transferFailedDetail:
+      "Bu axından işə yarayan heç nə çıxmadı. Göndərəni yenidən başladın, sonra yenidən skan edin — " +
+      "yarımçıq ötürmə vaxtdan başqa heç nəyə mal olmur.",
+    tryAgain: "Yenidən cəhd et",
+    transferSummary: "Ötürmə xülasəsi",
+    transferComplete: "Ötürmə tamamlandı!",
+    recoveredFile: "100% · fayl bərpa olundu",
+    recoveredText: "100% · mətn bərpa olundu",
+    textReceived: "Mətn qəbul edildi",
+    textLabel: "mətn",
+    fileStats: (size, seconds, rate) => `${size}, ${seconds} ərzində · ${rate}`,
+    gzipDecompressed: "gzip açıldı",
+    shaVerified: "SHA-256 təsdiqləndi ✓",
+    saveFile: (name) => `${name} saxla`,
+    receiveAnother: "Başqa fayl qəbul et",
+    showText: "Mətni göstər",
+    mediaImage: "şəkil",
+    mediaVideo: "video",
+    mediaAudio: "audio",
+    showMedia: (noun) => `${noun} göstər`,
+    clearCache: "Nar Transfer keşini təmizlə",
+    cacheCleared: "Keş təmizləndi",
+    clearCacheFailed: "Təmizləmə uğursuz oldu — yenidən cəhd edin",
+    receivedPreviewAlt: (name) => `Qəbul edilən faylın önizləməsi: ${name}`,
+    receivedFileAriaLabel: (name) => `Qəbul edilən fayl: ${name}`,
+    supportAfter: "♥ Bəyəndiniz? Mənə bir qəhvə alın",
+  },
+
+  common: {
+    copy: "Kopyala",
+    copied: "Kopyalandı",
+    copyFailed: "Kopyalama uğursuz oldu",
+    close: "Bağla",
+    share: "Paylaş…",
+    dismiss: "Bağla",
+    help: "Kömək",
+    gotIt: "Anladım",
+  },
+
+  errors: {
+    fileEmpty: "Boş olmayan bir fayl seçin.",
+    fileOverLimit: (limit) => `Bu brauzer versiyasında fayllar ${limit} ilə məhdudlaşır.`,
+    fileNameTooLong: "Fayl adı və ya media növü çox uzundur.",
+    inflateOverflow: "Bərpa edilən fayl bəyan edilən uzunluğu keçir.",
+    containerTruncated: "Bərpa edilən faylın başlığı tamamlanmayıb.",
+    containerBadMagic: "Bərpa edilən faylın başlığı yanlışdır.",
+    containerBadCompression: "Bərpa edilən fayl dəstəklənməyən sıxılmadan istifadə edir.",
+    containerLengthMismatch: "Bərpa edilən faylın uzunluğu başlığı ilə uyğun gəlmir.",
+    gzipIncomplete: "Bərpa edilən gzip yükü tamamlanmayıb.",
+    gzipLengthMismatch: "Gzip yükünün uzunluğu fayl başlığı ilə uyğun gəlmir.",
+    decompressedLengthMismatch: "Açılmış faylın uzunluğu başlığı ilə uyğun gəlmir.",
+    streamChecksumMismatch: "Optik axının yoxlama cəmi uyğun gəlmədi.",
+    sha256Failed: "Bərpa edilən fayl SHA-256 yoxlamasından keçmədi.",
+    snippetEmpty: "Göndərmədən əvvəl mətn yapışdırın və ya yazın.",
+    snippetOverLimit: (limit) => `Mətn parçaları ${limit} ilə məhdudlaşır.`,
+    snippetNotText: "Bu axın mətn parçası deyil.",
+    snippetBadUtf8: "Bərpa edilən parça düzgün UTF-8 deyil.",
+  },
+
+  verdicts: {
+    olderSender: (version) =>
+      `Həmin ekran daha köhnə Nar Transfer formatı (v${version}) göndərir. Göndərən cihazı yeniləyin.`,
+    newerSender: (version) =>
+      `Həmin ekran daha yeni Nar Transfer formatı (v${version}) göndərir. Bunu qəbul etmək üçün tətbiqi yeniləyin.`,
+    unsupportedFlags:
+      "Bu axın tətbiqin bu versiyasının oxuya bilmədiyi Nar Transfer funksiyasından istifadə edir. Bunu qəbul etmək üçün tətbiqi yeniləyin.",
+  },
+
+  units: {
+    bytes: "B",
+    kilobytes: "KB",
+    megabytes: "MB",
+    kbPerSecond: (value) => `${value} KB/s`,
+    secondsValue: (value) => `${value} san`,
+    durHours: (hours) => `${hours} saat`,
+    durMinutes: (minutes) => `${minutes} dəq`,
+    durSeconds: (seconds) => `${seconds} san`,
+  },
+
+  i18n: {
+    languageSelectLabel: "Dil",
+    unreviewedNote:
+      "Bu tərcümə maşın tərəfindən hazırlanıb və hələ ana dili daşıyıcısı tərəfindən yoxlanılmayıb.",
+    unreviewedLinkText: "Tərcümə xətasını bildir",
+    switchOffer: "Nar Transfer Azərbaycan dilində mövcuddur.",
+    switchAction: "Azərbaycan dilində bax",
+  },
+};
