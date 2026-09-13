@@ -808,12 +808,6 @@ details.settings details.subsection .hint {
   color: var(--accent);
 }
 
-.footer-source-link {
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 /* Senders */
 .send-shell {
   width: min(720px, calc(100% - 32px));
