@@ -79,6 +79,7 @@ export const messages: Messages = {
     layout2: "2 कोड (1×2)",
     layout4: "4 कोड (2×2)",
     layout6: "6 कोड (2×3)",
+    layout9: "9 कोड (3×3)",
     settingDisplaySize: "डिस्प्ले साइज़",
     specTxRate: "tx रेट",
     specFramePayload: "फ़्रेम पेलोड",

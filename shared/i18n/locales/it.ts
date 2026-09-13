@@ -82,6 +82,7 @@ export const messages: Messages = {
     layout2: "2 codici (1×2)",
     layout4: "4 codici (2×2)",
     layout6: "6 codici (2×3)",
+    layout9: "9 codici (3×3)",
     settingDisplaySize: "dimensione a schermo",
     specTxRate: "velocità tx",
     specFramePayload: "payload per frame",

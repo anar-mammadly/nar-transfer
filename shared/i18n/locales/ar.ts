@@ -79,6 +79,7 @@ export const messages: Messages = {
     layout2: "رمزان (1×2)",
     layout4: "4 رموز (2×2)",
     layout6: "6 رموز (2×3)",
+    layout9: "9 رموز (3×3)",
     settingDisplaySize: "حجم العرض",
     specTxRate: "معدل الإرسال",
     specFramePayload: "حمولة الإطار",

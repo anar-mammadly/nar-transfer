@@ -81,6 +81,7 @@ export const messages: Messages = {
     layout2: "2 кода (1×2)",
     layout4: "4 кода (2×2)",
     layout6: "6 кодов (2×3)",
+    layout9: "9 кодов (3×3)",
     settingDisplaySize: "размер на экране",
     specTxRate: "скорость передачи",
     specFramePayload: "данные кадра",

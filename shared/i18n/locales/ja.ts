@@ -80,6 +80,7 @@ export const messages: Messages = {
     layout2: "コード2個 (1×2)",
     layout4: "コード4個 (2×2)",
     layout6: "コード6個 (2×3)",
+    layout9: "コード9個 (3×3)",
     settingDisplaySize: "表示サイズ",
     specTxRate: "送信レート",
     specFramePayload: "フレームペイロード",

@@ -78,6 +78,7 @@ export const messages: Messages = {
     layout2: "2 kod (1×2)",
     layout4: "4 kod (2×2)",
     layout6: "6 kod (2×3)",
+    layout9: "9 kod (3×3)",
     settingDisplaySize: "ekran ölçüsü",
     specTxRate: "ötürmə sürəti",
     specFramePayload: "kadr yükü",

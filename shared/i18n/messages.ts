@@ -101,6 +101,7 @@ export interface Messages {
     layout2: string; // "2 codes (1×2)"
     layout4: string;
     layout6: string;
+    layout9: string;
     settingDisplaySize: string;
     specTxRate: string;
     specFramePayload: string;

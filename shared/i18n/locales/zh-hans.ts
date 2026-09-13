@@ -79,6 +79,7 @@ export const messages: Messages = {
     layout2: "2 个码 (1×2)",
     layout4: "4 个码 (2×2)",
     layout6: "6 个码 (2×3)",
+    layout9: "9 个码 (3×3)",
     settingDisplaySize: "显示尺寸",
     specTxRate: "发送速率",
     specFramePayload: "帧载荷",
