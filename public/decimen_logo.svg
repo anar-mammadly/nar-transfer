@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
   <rect width="640" height="640" rx="112" fill="#7a1730"/>
   <g fill="#f0b23e" transform="translate(74,44) scale(2.46)">
-    <circle cx="100" cy="132" r="58"/>
-    <path d="M70,80 L83,40 L94,76 L100,34 L106,76 L117,40 L130,80 Z"/>
+    <text x="100" y="152" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-weight="700" font-size="160" text-anchor="middle">N</text>
   </g>
 </svg>

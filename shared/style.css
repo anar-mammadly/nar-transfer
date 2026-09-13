@@ -548,9 +548,6 @@ details.settings details.subsection .hint {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  /* Wordmark in text, mark in accent: all-cyan made the brand read as another
-     eyebrow label, and the accent is budgeted (see the control hierarchy). */
   color: var(--text);
   font-size: 13px;
   font-weight: 800;
@@ -559,15 +556,6 @@ details.settings details.subsection .hint {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-/* The mark is inlined in every header (fill: currentColor), so it rides the
-   accent token — and the standalone files keep it with no external request. */
-.brand-logo {
-  width: 22px;
-  height: 22px;
-  flex: none;
-  color: var(--accent);
 }
 
 .mode-badge,
@@ -1373,13 +1361,8 @@ details.settings details.subsection .hint {
   }
   /* The full name plus the mode badge share ~320px on the smallest phones. */
   .brand {
-    gap: 8px;
     font-size: 11px;
     letter-spacing: 0.08em;
-  }
-  .brand-logo {
-    width: 19px;
-    height: 19px;
   }
   .home-shell {
     width: min(100% - 28px, 520px);

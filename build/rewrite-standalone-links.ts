@@ -1,13 +1,9 @@
 import type { Plugin } from "vite";
 
 // The header brand, byte-identical to the single line in send/index.html and
-// receive/index.html — the inline SVG is what lets the standalone pages keep
-// the logo with no external reference. A drift here fails the build (below).
-const BRAND_INNER =
-  '<svg class="brand-logo" viewBox="42 34 116 156" fill="currentColor" aria-hidden="true">' +
-  '<circle cx="100" cy="132" r="58"/>' +
-  '<path d="M70,80 L83,40 L94,76 L100,34 L106,76 L117,40 L130,80 Z"/>' +
-  "</svg>Nar Transfer";
+// receive/index.html — a plain wordmark, no icon. A drift here fails the
+// build (below).
+const BRAND_INNER = "Nar Transfer";
 
 /**
  * A standalone file has no siblings, so links to the other pages are dead ends.
