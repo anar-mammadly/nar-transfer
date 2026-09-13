@@ -18,7 +18,7 @@ export function licenseBanner(version: string): Plugin {
     `Nar Transfer v${version} (based on Decimen Optical Transfer) — https://transfer.narix.az — ` +
     `(c) 2026 Evan Crawley (Bash Alarmist) — SPDX-License-Identifier: AGPL-3.0-or-later — ` +
     `portions MIT: (c) 2026 Steve Dakh; Emscripten (see NOTICE) — ` +
-    `Source: https://github.com/bashalarmistalt/decimen-optical-transfer`;
+    `Source: https://github.com/anar-mammadly/nar-transfer`;
   const comment = `/*! ${text} */\n`;
   const htmlComment = `<!-- ${text} -->`;
   return {

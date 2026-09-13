@@ -27,8 +27,7 @@ import { MAX_FILE_LABEL } from "../protocol";
 import { MAX_SNIPPET_LABEL } from "../snippet";
 
 const LOCALE_KEY = "decimen:locale";
-const BANNER_DISMISSED_KEY = "decimen:locale-banner-dismissed";
-const ISSUES_URL = "https://github.com/bashalarmistalt/decimen-optical-transfer/issues";
+const ISSUES_URL = "https://github.com/anar-mammadly/nar-transfer/issues";
 
 // Catalog loading lives in its own module because the standalone build swaps
 // it wholesale (loaders.ts → loaders.inline.ts, static imports) — see the
@@ -175,7 +174,6 @@ export async function initI18n(): Promise<Messages> {
 
   wireLanguageSwitcher(info);
   if (!info.reviewed) mountUnreviewedNote();
-  if (document.body.classList.contains("home-page")) void maybeOfferLocaleBanner(info);
   return msg;
 }
 
@@ -260,45 +258,6 @@ function mountUnreviewedNote(): void {
   link.textContent = msg.i18n.unreviewedLinkText;
   note.append(`${msg.i18n.unreviewedNote} `, link);
   footer.prepend(note);
-}
-
-/**
- * Home page only: a dismissible one-liner offering the visitor's own language
- * when the page isn't already in it. In the visitor's language, not the
- * page's — the reader it exists for is the one who can't read the page.
- */
-async function maybeOfferLocaleBanner(pageLocale: LocaleInfo): Promise<void> {
-  try {
-    if (localStorage.getItem(BANNER_DISMISSED_KEY)) return;
-  } catch {
-    return; // no way to remember a dismissal — never nag
-  }
-  const stored = storedLocale();
-  // An explicit earlier choice wins over navigator; either way, only offer
-  // when it differs from the page being read.
-  const wanted = stored ? localeByCode(stored) : matchLocale(navigator.languages ?? []);
-  if (!wanted || wanted.code === pageLocale.code) return;
-  const { messages: theirs } = await loaders[wanted.code]!();
-
-  const banner = document.createElement("div");
-  banner.className = "locale-banner";
-  const link = document.createElement("a");
-  link.href = localeUrl(pageLocale, wanted);
-  link.textContent = `${theirs.i18n.switchOffer} ${theirs.i18n.switchAction} →`;
-  const dismiss = document.createElement("button");
-  dismiss.type = "button";
-  dismiss.className = "text-button";
-  dismiss.textContent = theirs.common.dismiss;
-  dismiss.addEventListener("click", () => {
-    banner.remove();
-    try {
-      localStorage.setItem(BANNER_DISMISSED_KEY, "1");
-    } catch {
-      // Dismissed for this visit at least.
-    }
-  });
-  banner.append(link, dismiss);
-  document.querySelector("main")?.prepend(banner);
 }
 
 // ---------------------------------------------------------------------------

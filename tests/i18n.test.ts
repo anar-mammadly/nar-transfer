@@ -136,7 +136,7 @@ test("inline markup in Html-suffixed values survives translation", () => {
       .filter(([path]) => path.endsWith("Html"))
       .map(([path, value]) => [path, tagsOf(value)]),
   );
-  assert.ok(want.size >= 2, "expected the hero and support-body Html keys");
+  assert.ok(want.size >= 1, "expected at least the hero Html key");
   for (const [code, catalog] of Object.entries(CATALOGS)) {
     for (const [path, value] of stringLeaves(catalog)) {
       if (!path.endsWith("Html")) continue;

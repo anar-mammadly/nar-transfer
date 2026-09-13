@@ -15,38 +15,34 @@ export const messages: Messages = {
     modeBadgeSend: "Göndər",
     modeBadgeReceive: "Qəbul et",
     footerLinksAriaLabel: "Layihə bağlantıları",
-    footerSupport: "♥ dəstək ol",
   },
 
   home: {
     title: "Nar Transfer — faylları işıqla ötür",
     metaDescription:
-      "İki cihaz arasında yalnız ekran və kamera ilə fayl və ya mətn göndərin. Fontan kodlaşdırılmış animasiyalı QR kodlar, aralarında şəbəkə yoxdur.",
+      "İki cihaz arasında sadəcə ekran və kameradan istifadə edərək fayl və ya mətn göndərin — fontan kodlu animasiyalı QR kodlarla, aralarında şəbəkəyə ehtiyac olmadan.",
     ogDescription:
-      "Fontan kodlaşdırılmış animasiyalı QR kodlar, ekrandan kameraya. Hesab yoxdur, cütləşdirmə yoxdur, iki cihaz arasında şəbəkə yolu yoxdur. Sabit sürət %TOP_SPEED%, sübutlarla ölçülüb.",
+      "Fontan kodlu animasiyalı QR kodlar, ekrandan kameraya. Hesab, cütləşdirmə və ya iki cihaz arasında şəbəkə tələb olunmur. Ölçülmüş sürət: %TOP_SPEED%, sübutları ilə birlikdə.",
     ogImageAlt: "Transfer zamanı telefon başqa ekrandan animasiyalı QR kod axınını oxuyur.",
     heroTitleHtml: "Faylları<br />işıqla ötür.",
     heroCopy:
-      "Bir ekrandan başqa cihazın kamerasına fayl və ya mətn parçası göndərin. Hesab, cütləşdirmə, bulud yaddaşı və ya cihazlar arasında şəbəkə tələb olunmur.",
+      "Bir ekrandan digər cihazın kamerasına fayl və ya mətn göndərin. Hesab yaratmağa, cütləşdirməyə, bulud yaddaşına və ya cihazlar arasında şəbəkəyə ehtiyac yoxdur.",
     chooseSideAriaLabel: "Tərəf seçin",
     cardSendKicker: "Bu ekran ötürür",
     cardSendTitle: "Fayl və ya mətn göndər",
     cardSendBody:
-      "%MAX_FILE_LABEL%-a qədər istənilən fayl, ya da %MAX_SNIPPET_LABEL%-a qədər yapışdırılmış mətn parçası. Faydalı olduqda sıxılır, orijinal adı ilə bərpa olunur.",
+      "İstənilən fayl (%MAX_FILE_LABEL%-a qədər) və ya yapışdırılan mətn (%MAX_SNIPPET_LABEL%-a qədər). Faydalı olduqda sıxılır, öz adı ilə bərpa olunur.",
     cardSendAction: "Göndər",
     cardReceiveKicker: "Bu kamera qəbul edir",
     cardReceiveTitle: "Yönəldin və qəbul edin",
     cardReceiveBody: "Faylı almaq üçün kameranı göndərənin ekranına yönəldin.",
     cardReceiveAction: "Qəbul et",
     shareSite: "Nar Transfer-i paylaş",
-    supportTitle: "Pulsuz, açıq mənbə, reklamsız",
-    supportBodyHtml:
-      'Əgər Nar Transfer gününüzü asanlaşdırıbsa, mənə <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">bir fincan qəhvə</a> ala bilərsiniz.',
     shareDialogTitle: "Bu tətbiqi paylaş",
     shareDialogHint: "Bunu başqa cihazın kamerası ilə skan edin, ya da linki göndərin.",
     siteLinkAriaLabel: "Sayt linki",
     privacyNote:
-      "Cihazlar arasında şəbəkə yolu tələb olunmur. Baytlar işıqla ötürülür. Fayllar şifrələnmir, ona görə göndərən ekranda olan hər şey ona yönəlmiş istənilən kamera tərəfindən oxuna bilər.",
+      "Cihazlar arasında şəbəkə tələb olunmur — hər şey işıqla ötürülür. Nar Transfer heç bir server istifadə etmir: göndərdiyiniz fayl və ya mətni saxlamır, üçüncü tərəflə paylaşmır. Diqqət: ötürmə şifrələnmir, ona görə göndərən ekrana yönəlmiş istənilən kamera onu oxuya bilər.",
   },
 
   send: {
@@ -217,7 +213,6 @@ export const messages: Messages = {
     clearCacheFailed: "Təmizləmə uğursuz oldu — yenidən cəhd edin",
     receivedPreviewAlt: (name) => `Qəbul edilən faylın önizləməsi: ${name}`,
     receivedFileAriaLabel: (name) => `Qəbul edilən fayl: ${name}`,
-    supportAfter: "♥ Bəyəndiniz? Mənə bir qəhvə alın",
   },
 
   common: {

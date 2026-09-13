@@ -150,7 +150,10 @@ button:focus-visible {
 .stage {
   background: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 14px;
+  /* Lifts the code off the warm page background so it reads as a distinct,
+     scannable surface rather than blending into the cream behind it. */
+  box-shadow: 0 8px 28px rgba(var(--brand-red-rgb), 0.16);
   /* The code itself is the tap target for the fullscreen toggle below. */
   cursor: zoom-in;
 }
@@ -186,6 +189,7 @@ body.qr-full #stage {
   margin: 0;
   padding: 0;
   border-radius: 0;
+  box-shadow: none;
   cursor: zoom-out;
 }
 
@@ -783,31 +787,26 @@ details.settings details.subsection .hint {
 }
 
 /* Site footer -------------------------------------------------------------
-   Mirrors the header: full-width chrome, muted, one row. The id line carries
-   the version and build hash so a saved standalone file names its vintage. */
+   Mirrors the header: full-width chrome, muted, one row. Deliberately
+   minimal — just the "Developed by" credit, a source link, and (appended by
+   shared/i18n/index.ts) the language switcher — so it stays centered as one
+   quiet line rather than a busy multi-column bar. */
 .site-footer {
   margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px 18px;
   padding: 16px max(22px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(22px, env(safe-area-inset-left));
   border-top: 1px solid var(--line);
   color: var(--muted-dim);
   font-size: 11px;
   letter-spacing: 0.04em;
+  text-align: center;
 }
 
-/* Name on its own line, version · build · license beneath it — one long line
-   wrapped mid-phrase on phones. */
 .footer-id {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  /* Absorb the row's slack: everything after it (project links, language)
-     packs into one cluster at the end instead of drifting apart. */
-  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -821,12 +820,7 @@ details.settings details.subsection .hint {
   color: var(--accent);
 }
 
-.footer-links {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-links a {
+.footer-source-link {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1484,45 +1478,6 @@ details.settings details.subsection .hint {
   }
 }
 
-/* Support (hosted builds only — the standalone rewrite strips the footer link
-   and the module swap no-ops the post-transfer line). Quiet by design. */
-.support-card {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  margin: 26px auto 0;
-  padding: 14px 18px;
-  max-width: 460px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-}
-.support-mug {
-  width: 28px;
-  height: 28px;
-  color: var(--accent);
-  flex: none;
-}
-.support-title {
-  margin: 0;
-  color: var(--text);
-}
-.support-text {
-  margin: 2px 0 0;
-  color: var(--muted);
-  font-size: 13px;
-}
-.support-text a,
-.support-after a,
-.site-footer .support-link {
-  color: var(--accent);
-}
-.support-after {
-  margin-top: 10px;
-  font-size: 13px;
-  text-align: center;
-}
-
 /* Post-transfer end actions: keep the two buttons side by side on phones —
    the pair shares the row and labels wrap inside the buttons, instead of the
    row breaking into a stack that reads as a list. */
@@ -1540,11 +1495,6 @@ details.settings details.subsection .hint {
    shared/i18n/index.ts; none exist in the markup. */
 .footer-lang {
   position: relative;
-  /* On narrow screens the identity block takes the first row; this keeps the
-     language control pinned to the row's end while the links stay at its
-     start. On wide screens the id block's flex-grow leaves this no slack, so
-     links and language sit together. */
-  margin-inline-start: auto;
 }
 /* appearance: none strips the native dropdown arrow; put an equivalent back
    so the control still reads as a select. On the wrapper because ::after
@@ -1596,28 +1546,6 @@ details.settings details.subsection .hint {
 }
 .i18n-note a {
   color: var(--muted);
-  text-decoration: underline;
-}
-
-/* Home page only: a dismissible offer to switch to the visitor's language.
-   Sits above the hero, styled to be noticed once and ignorable after. */
-.locale-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  width: 100%;
-  padding: 10px 14px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  font-size: 13px;
-}
-.locale-banner a {
-  color: var(--accent);
-  text-decoration: none;
-}
-.locale-banner a:hover,
-.locale-banner a:focus-visible {
   text-decoration: underline;
 }
 

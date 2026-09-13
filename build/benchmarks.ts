@@ -363,7 +363,7 @@ const END = "<!-- benchmarks:end -->";
 const BADGE_URL =
   "https://img.shields.io/badge/dynamic/json?label=sustained&color=blue" +
   "&query=%24.sustained.badge" +
-  "&url=https%3A%2F%2Fraw.githubusercontent.com%2Fbashalarmistalt%2Fdecimen-optical-transfer%2Fmain%2Fbenchmarks%2Frecords.json";
+  "&url=https%3A%2F%2Fraw.githubusercontent.com%2Fanar-mammadly%2Fnar-transfer%2Fmain%2Fbenchmarks%2Frecords.json";
 
 function tableRow(e: RecordEntry): string {
   const mb = (e.payloadBytes / 1024 / 1024).toFixed(1);

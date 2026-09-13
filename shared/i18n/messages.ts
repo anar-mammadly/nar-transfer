@@ -40,7 +40,6 @@ export interface Messages {
     modeBadgeSend: string;
     modeBadgeReceive: string;
     footerLinksAriaLabel: string; // "Project links"
-    footerSupport: string; // "♥ support"
   };
 
   /** Landing page (index.html) — hosted site only, so %TOKENS% are allowed. */
@@ -62,8 +61,6 @@ export interface Messages {
     cardReceiveBody: string;
     cardReceiveAction: string; // "Receive"
     shareSite: string; // "Share Decimen"
-    supportTitle: string; // "Free, open source, no ads"
-    supportBodyHtml: string; // carries an <a …>coffee link</a>
     shareDialogTitle: string; // "Share this app"
     shareDialogHint: string;
     siteLinkAriaLabel: string;
@@ -247,7 +244,6 @@ export interface Messages {
     clearCacheFailed: string;
     receivedPreviewAlt: (name: string) => string;
     receivedFileAriaLabel: (name: string) => string;
-    supportAfter: string; // "♥ Enjoyed this? Buy me a coffee"
   };
 
   /** Small shared UI words. */

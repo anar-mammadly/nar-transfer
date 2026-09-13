@@ -16,7 +16,6 @@ export const messages: Messages = {
     modeBadgeSend: "发送",
     modeBadgeReceive: "接收",
     footerLinksAriaLabel: "项目链接",
-    footerSupport: "♥ 支持",
   },
 
   home: {
@@ -40,9 +39,6 @@ export const messages: Messages = {
     cardReceiveBody: "把摄像头对准发送方的屏幕，即可接收文件。",
     cardReceiveAction: "接收",
     shareSite: "分享 Nar Transfer",
-    supportTitle: "免费、开源、无广告",
-    supportBodyHtml:
-      '如果 Nar Transfer 帮到了你，欢迎<a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">请我喝杯咖啡</a>。',
     shareDialogTitle: "分享这个应用",
     shareDialogHint: "用另一台设备的摄像头扫描此码，或把链接发过去。",
     siteLinkAriaLabel: "站点链接",
@@ -215,7 +211,6 @@ export const messages: Messages = {
     clearCacheFailed: "清除失败——请重试",
     receivedPreviewAlt: (name) => `接收文件预览：${name}`,
     receivedFileAriaLabel: (name) => `接收到的文件：${name}`,
-    supportAfter: "♥ 觉得好用？请我喝杯咖啡",
   },
 
   common: {

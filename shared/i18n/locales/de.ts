@@ -15,7 +15,6 @@ export const messages: Messages = {
     modeBadgeSend: "Senden",
     modeBadgeReceive: "Empfangen",
     footerLinksAriaLabel: "Projekt-Links",
-    footerSupport: "♥ unterstützen",
   },
 
   home: {
@@ -41,9 +40,6 @@ export const messages: Messages = {
       "Richten Sie Ihre Kamera auf den Bildschirm des Senders, um die Datei zu empfangen.",
     cardReceiveAction: "Empfangen",
     shareSite: "Nar Transfer teilen",
-    supportTitle: "Kostenlos, Open Source, ohne Werbung",
-    supportBodyHtml:
-      'Wenn Nar Transfer Ihnen den Tag leichter gemacht hat, können Sie mir <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">einen Kaffee spendieren</a>.',
     shareDialogTitle: "Diese App teilen",
     shareDialogHint:
       "Scannen Sie den Code mit der Kamera eines anderen Geräts, oder schicken Sie ihm den Link.",
@@ -228,7 +224,6 @@ export const messages: Messages = {
     clearCacheFailed: "Leeren fehlgeschlagen — erneut versuchen",
     receivedPreviewAlt: (name) => `Vorschau der empfangenen Datei: ${name}`,
     receivedFileAriaLabel: (name) => `Empfangene Datei: ${name}`,
-    supportAfter: "♥ Hat Ihnen das gefallen? Spendieren Sie mir einen Kaffee",
   },
 
   common: {
