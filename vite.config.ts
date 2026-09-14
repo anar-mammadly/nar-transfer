@@ -55,8 +55,8 @@ const MANIFEST_BASE = {
   short_name: "Nar Transfer",
   description:
     "Send a file or text between two devices with a screen and a camera. No network.",
-  theme_color: "#7a1730",
-  background_color: "#fbf1e6",
+  theme_color: "#ffffff",
+  background_color: "#ffffff",
   display: "standalone" as const,
   // Real icons, not the demo payload image this once pointed at. The
   // maskable variant keeps the mark inside the launcher's safe zone;
