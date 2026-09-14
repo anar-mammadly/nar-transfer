@@ -335,6 +335,43 @@ details.settings input[type="range"] {
   border-radius: 6px;
   padding: 5px 8px;
 }
+/* Bare <select> keeps the OS's own dropdown arrow and menu font no matter
+   what border/background it's given, which read as a stray native control
+   next to the rest of this warm, custom-drawn panel. appearance: none clears
+   that; the arrow comes back as a drawn-on chevron in the same muted ink the
+   rest of the panel's chrome uses, so the control finally reads as ours. */
+details.settings select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-inline-end: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a6650' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 14px;
+  cursor: pointer;
+  transition: border-color 130ms ease;
+}
+[dir="rtl"] details.settings select {
+  padding-inline-end: 8px;
+  padding-inline-start: 28px;
+  background-position: left 8px center;
+}
+details.settings select:hover {
+  border-color: var(--line-bright);
+}
+details.settings select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+/* The range thumb/track default to the OS accent (blue) with no styling of
+   their own — accent-color is the one property that retints a native range
+   without rebuilding its hit-testing and keyboard behavior from scratch. */
+details.settings input[type="range"] {
+  accent-color: var(--accent);
+  padding: 0;
+  border: 0;
+  background: none;
+}
 /* The one setting that is a policy rather than a knob: it is read when a
    transfer LANDS, not when the camera starts, and it is the only preference
    Decimen persists across sessions (see docs/user/privacy.md). Reads as a
